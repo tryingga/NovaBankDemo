@@ -1,0 +1,29 @@
+name: NovaBankDemo
+options:
+  bundleIdPrefix: com.novabank.demo
+  deploymentTarget:
+    iOS: "17.0"
+
+targets:
+  NovaBankDemo:
+    type: application
+    platform: iOS
+    sources:
+      - path: NovaBankDemo
+        excludes:
+          - "project.yml"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.novabank.demo
+        PRODUCT_NAME: NovaBankDemo
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "Nova Bank Demo"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UIStatusBarStyle: UIStatusBarStyleDarkContent
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGN_IDENTITY: ""
